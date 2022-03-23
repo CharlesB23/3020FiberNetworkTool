@@ -1,0 +1,121 @@
+<div class="sect">
+    <h2>ONUs Database</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter an ONU</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter ONU Name</mat-label>
+                    <input
+                        matInput 
+                        #on2
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Standard Spec of ONU</mat-label>
+                    <input
+                        matInput type="string"
+                        #ss2
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Downstream Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #ds2
+                      
+
+
+                    >
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Upstream Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #us2
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+              
+               
+                <mat-form-field>
+                    <mat-label>Enter Power consumption</mat-label>
+                    <input
+                        matInput type="string"
+                        #pc2
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Link </mat-label>
+                    <input
+                        matInput type="string"
+                        #link
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                
+               
+                <button mat-raised-button (click)="onAdd(on2.value, ss2.value, ds2.value, us2.value, pc2.value, link.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>ONUs Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let onu of onus">
+                        <mat-expansion-panel-header>
+                            {{onu.Name}}
+                            
+                        
+                        </mat-expansion-panel-header>
+                        Name: {{onu.Name}} <br>
+                        StandardSpec: {{onu.StandardSpec}} <br>
+                        DownstreamRate: {{onu.DownstreamRate}} Mbps <br>
+                        UpstreamRate: {{onu.UpstreamRate}} Mbps <br>
+                       
+                        PowerConsumption: {{onu.PowerConsumption}} w <br>
+                        Link: {{onu.Link}} <br>
+                       
+
+
+               
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  

@@ -1,0 +1,1154 @@
+<div class="sect">
+    <h2>Pon Link Design Tool and Database</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a the parameters for the PON link deisgn</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label> Name of PON design</mat-label>
+                    <input
+                        matInput type="string"
+                        #Name
+                        
+                     
+
+                    required>
+
+                </mat-form-field>
+
+                <input
+                        matInput 
+                        #TBAD1
+                        type="string"
+                     
+
+
+                    >
+             <input
+                    matInput 
+                    #TBAD2
+                    type="string"
+                 
+
+
+                >    
+                <input
+                matInput 
+                #TBAD3
+                type="string"
+             
+
+
+                 >    
+             <input
+            matInput 
+            #TBAD4
+            type="string"
+         
+
+
+             >    
+                 <input
+                      matInput 
+                      #TBAD5
+                     type="string"
+     
+
+
+                 >    
+                 <input
+                 matInput 
+                 #TBAU1
+                 type="string"
+              
+
+
+             >
+      <input
+             matInput 
+             #TBAU2
+             type="string"
+          
+
+
+         >    
+         <input
+         matInput 
+         #TBAU3
+         type="string"
+      
+
+
+          >    
+      <input
+     matInput 
+     #TBAU4
+     type="string"
+  
+
+
+      >    
+          <input
+               matInput 
+               #TBAU5
+              type="string"
+
+
+
+          >    
+
+                  <input
+                     matInput 
+                     #TBD
+                    type="string"
+
+
+
+                 >   
+                 <input
+             matInput 
+             #TBU
+             type="string"
+
+
+
+                    > 
+                    <p>Enter the number of users</p>
+                <mat-form-field>
+                    <mat-label> Number of Users in Area 1</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUA1
+                        
+                     
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label> Number of Users in Area 2 </mat-label>
+                    <input
+                        matInput type="string"
+                        #NUA2
+                       
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label> Number of Users in Area 3</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUA3
+                      
+
+                    >
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label> Number of Users in Area 4</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUA4
+                        
+                     
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label> Number of Users in Area 5 </mat-label>
+                    <input
+                        matInput type="string"
+                        #NUA5
+                       
+
+                    >
+
+                </mat-form-field>
+                <br>
+
+                <p> </p>
+
+              <br>  <p>Enter the Download Rate</p>
+
+                <mat-form-field>
+                    <mat-label> Enter Download rate for area 1</mat-label>
+                    <input
+                        matInput type="string"
+                        #DRA1
+                      
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Download rate for area 2</mat-label>
+                    <input
+                        matInput type="string"
+                        #DRA2
+                        
+                     
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Download rate for area 3 </mat-label>
+                    <input
+                        matInput type="string"
+                        #DRA3
+                       
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Download rate for area 4</mat-label>
+                    <input
+                        matInput type="string"
+                        #DRA4
+                      
+
+                    >
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Download rate for area 5</mat-label>
+                    <input
+                        matInput type="string"
+                        #DRA5
+                        
+                     
+
+                    >
+
+                </mat-form-field>
+                <p>Enter the Upload Rate</p>
+                <mat-form-field>
+                    <mat-label>Enter Upload rate for area 1 </mat-label>
+                    <input
+                        matInput type="string"
+                        #URA1
+                       
+
+                        required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Upload rate for area 2</mat-label>
+                    <input
+                        matInput type="string"
+                        #URA2
+                      
+
+                        required >
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Upload rate for area 3</mat-label>
+                    <input
+                        matInput  type="string"
+                        #URA3
+                       
+                     
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Upload rate for area 4 </mat-label>
+                    <input
+                        matInput type="string"
+                        #URA4
+                       
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Upload rate for area 5</mat-label>
+                    <input
+                        matInput type="string"
+                        #URA5
+                      
+
+                    >
+
+                </mat-form-field><br>
+
+
+                <p>Enter the Latitude and Longtitude Coordinates of Equipment</p>
+
+                <mat-form-field>
+                    <mat-label>Latitude Coordinate of OLT</mat-label>
+                    <input
+                        matInput type="string"
+                        #LATOLT
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Longtitude Coord of OLT</mat-label>
+                    <input
+                        matInput type="string"
+                        #LONGOLT
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label> Lat Coord of splitter</mat-label>
+                    <input
+                        matInput type="string"
+                        #LATSPLIT
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Long Coord of splitter</mat-label>
+                    <input
+                        matInput type="string"
+                        #LONGSPLIT
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Latitude Coord of user 1</mat-label>
+                    <input
+                        matInput type="string"
+                        #LATU1
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Longtitude Coord of user 1</mat-label>
+                    <input
+                        matInput type="string"
+                        #LONGU1
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Latitude Coord of user 2</mat-label>
+                    <input
+                        matInput type="string"
+                        #LATU2
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Longtitude Coord of user 2</mat-label>
+                    <input
+                        matInput type="string"
+                        #LONGU2
+                      
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Latitude Coordinate of user 3</mat-label>
+                    <input
+                        matInput type="string"
+                        #LATU3
+                      
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Longtitude Coordinate of user 3</mat-label>
+                    <input
+                        matInput type="string"
+                        #LONGU3
+                      
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Latitude Coordinate of user 4</mat-label>
+                    <input
+                        matInput type="string"
+                        #LATU4
+                      
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Longtitude Coordinate of user 4</mat-label>
+                    <input
+                        matInput type="string"
+                        #LONGU4
+                      
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Latitude Coordinate of user 5</mat-label>
+                    <input
+                        matInput type="string"
+                        #LATU5
+                      
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Longtitude Coordinate of user 5</mat-label>
+                    <input
+                        matInput type="string"
+                        #LONGU5
+                      
+
+                    >
+
+                    
+
+                </mat-form-field>
+
+                <input
+                matInput 
+                #OSL
+               type="string"
+                 > 
+                 <input
+                 matInput 
+                 #SU1
+                type="string"
+                  > 
+                  <input
+                 matInput 
+                 #SU2
+                type="string"
+                  > <input
+                  matInput 
+                  #SU3
+                 type="string"
+                   > <input
+                   matInput 
+                   #SU4
+                  type="string"
+                    > <input
+                    matInput 
+                    #SU5
+                   type="string"
+                     > 
+                     <input
+                     matInput 
+                     #FU1
+                    type="string"
+                      > 
+                      <input
+                     matInput 
+                     #FU2
+                    type="string"
+                      > <input
+                      matInput 
+                      #FU3
+                     type="string"
+                       > <input
+                       matInput 
+                       #FU4
+                      type="string"
+                        > <input
+                        matInput 
+                        #FU5
+                       type="string"
+                         > 
+                         <p>Enter the Parameters relating to Connector Loss</p>
+                <mat-form-field>
+                    <mat-label>connector loss of the fibre</mat-label>
+                    <input
+                        matInput type="string"
+                        #CONLOSSFIB
+                        
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>num connectors OLT to the splitter</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMCONOS
+                        
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>number connectors SPLITTER to the user 1</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMCONU1
+                        
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>num connectors SPLITTER to the user 2</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMCONU2
+                        
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter the number of connectors from the SPLITTER to the user 3</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMCONU3
+                        
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter the number of connectors from the SPLITTER to the user 4</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMCONU4
+                        
+
+                    >
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter the number of connectors from the SPLITTER to the user 5</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMCONU5
+                        
+
+                    >
+
+                </mat-form-field>
+
+                        <input
+                        matInput 
+                        #CLU1
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #CLU2
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #CLU3
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #CLU4
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #CLU5
+                       type="string"
+                         > 
+                         <p>Enter the Parameters relating to Attenuation loss</p>
+                <mat-form-field>
+                    <mat-label>attentuation of the fibre</mat-label>
+                    <input
+                        matInput type="string"
+                        #ATTFIB
+                       
+
+                    required>
+
+                </mat-form-field><br>
+
+                     <input
+                        matInput 
+                        #ALU1
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #ALU2
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #ALU3
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #ALU4
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #ALU5
+                       type="string"
+                         > 
+                         <p>Enter the Parameters relating to splice Loss</p>
+                <mat-form-field>
+                    <mat-label>splice loss of the fibre</mat-label>
+                    <input
+                        matInput type="string"
+                        #SPLICELOSSFIB
+                        
+
+                    required>
+
+                </mat-form-field>
+
+                    
+             <mat-form-field>
+                    <mat-label>number of splices from the OLT to the splitter</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMSPLOS
+                        
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter the number of splices from the splitter to the user 1</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMSPLU1
+                        
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>splices from the splitter to the user 2</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMSPLU2
+                        
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter the number of splices from the splitter to the user 3</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMSPLU3
+                        
+
+                    >
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter the number of splices from the splitter to the user 4</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMSPLU4
+                        
+
+                    >
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter the number of splices from the splitter to the user 5</mat-label>
+                    <input
+                        matInput type="string"
+                        #NUMSPLU5
+                        
+
+                    >
+
+                </mat-form-field>
+
+                     <input
+                        matInput 
+                        #SLU1
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #SLU2
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #SLU3
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #SLU4
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #SLU5
+                       type="string"
+                         > 
+               
+
+                         <p>Enter the Splitter Ratio</p>
+                <mat-form-field>
+                    <mat-label>Enter the splitter ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #SPLITRATIO
+                        
+
+                    required>
+
+                </mat-form-field><br>
+
+                      <input
+                        matInput 
+                        #SPLITLOSSU1
+                       type="string"
+                         > 
+                         <p>Enter the Insersion Losses</p>
+                <mat-form-field>
+                    <mat-label>Enter the insersion loss for user 1</mat-label>
+                    <input
+                        matInput type="string"
+                        #ILU1
+                        
+
+                    >
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter the insersion loss for user 2</mat-label>
+                    <input
+                        matInput type="string"
+                        #ILU2
+                        
+
+                    >
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter the insersion loss for user 3</mat-label>
+                    <input
+                        matInput type="string"
+                        #ILU3
+                        
+
+                    >
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter the insersion loss for user 4</mat-label>
+                    <input
+                        matInput type="string"
+                        #ILU4
+                        
+
+                    >
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter the insersion loss for user 5</mat-label>
+                    <input
+                        matInput type="string"
+                        #ILU5
+                        
+
+                    >
+
+                </mat-form-field><br>
+                     <input
+                        matInput 
+                        #TOTU1
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #TOTU2
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #TOTU3
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #TOTU4
+                       type="string"
+                         > 
+                         <input
+                        matInput 
+                        #TOTU5
+                       type="string"
+                         > 
+                         <p>Enter the dispersion of the fibre</p>
+
+                         <mat-form-field>
+                            <mat-label>Enter the dispersion of fibre</mat-label>
+                            <input
+                                matInput type="string"
+                                #DF
+                                
+        
+                            >
+        
+                        </mat-form-field><br>
+
+                        <input
+                        matInput 
+                        #DOS
+                       type="string"
+                         > 
+
+                         <input
+                        matInput 
+                        #DU1
+                       type="string"
+                         > 
+                         <input
+                         matInput 
+                         #DU2
+                        type="string"
+                          > 
+                          <input
+                          matInput 
+                          #DU3
+                         type="string"
+                           > 
+                           <input
+                           matInput 
+                           #DU4
+                          type="string"
+                            > 
+                            <input
+                            matInput 
+                            #DU5
+                           type="string"
+                             > 
+
+                         <button mat-raised-button (click)="onAdd(Name.value, TBAD1.value, TBAD2.value, TBAD3.value, TBAD4.value, TBAD5.value, TBAU1.value, TBAU2.value, TBAU3.value, TBAU4.value, TBAU5.value, TBD.value, TBU.value,  NUA1.value, NUA2.value, NUA3.value, NUA4.value, NUA5.value, DRA1.value, DRA2.value, DRA3.value, DRA4.value, DRA5.value, URA1.value, URA2.value, URA3.value, URA4.value, URA5.value, 
+                         LATOLT.value, LONGOLT.value, LATSPLIT.value, LONGSPLIT.value, LATU1.value, LONGU1.value, LATU2.value,  LONGU2.value, LATU3.value,  LONGU3.value, LATU4.value,  LONGU4.value, LATU5.value,  LONGU5.value,
+                         OSL.value, SU1.value, SU2.value, SU3.value, SU4.value, SU5.value, FU1.value, FU2.value,  FU3.value, FU4.value, FU5.value,    
+                         CONLOSSFIB.value, NUMCONOS.value, NUMCONU1.value, NUMCONU2.value, NUMCONU3.value, NUMCONU4.value, NUMCONU5.value,
+                         CLU1.value, CLU2.value, CLU3.value, CLU4.value, CLU5.value,  
+                         ATTFIB.value, ALU1.value, ALU2.value, ALU3.value, ALU4.value, ALU5.value, SPLICELOSSFIB.value,
+                         NUMSPLOS.value, NUMSPLU1.value, NUMSPLU2.value, NUMSPLU3.value, NUMSPLU4.value, NUMSPLU5.value, 
+                         SLU1.value, SLU2.value, SLU3.value, SLU4.value, SLU5.value,
+                          SPLITRATIO.value, SPLITLOSSU1.value, ILU1.value, ILU2.value, ILU3.value, ILU4.value, ILU5.value, 
+                          TOTU1.value, TOTU2.value, TOTU3.value, TOTU4.value, TOTU5.value,
+                          DF.value, DOS.value, DU1.value, DU2.value, DU3.value, DU4.value, DU5.value )" color="primary">Design</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>PON link design tool and Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let pondesign of pondesigns">
+                        <mat-expansion-panel-header>
+                           Design: {{pondesign.Name}} 
+                        </mat-expansion-panel-header>
+                        Total Downstream bandwidth in area 1: {{pondesign.TotalBandwidthdownA1}} Mbps <br>
+                        Total Downstream bandwidth in area 2: {{pondesign.TotalBandwidthdownA2}} Mbps <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Downstream Bandwidth in Designs for 3 to 5 Areas </mat-expansion-panel-header>
+                        TotalBandwidthdownA3: {{pondesign.TotalBandwidthdownA3}} Mbps<br>
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Downstream Bandwidth in Designs for 4 to 5 Areas </mat-expansion-panel-header>
+                       
+                        TotalBandwidthdownA4: {{pondesign.TotalBandwidthdownA4}} Mbps <br>
+                        TotalBandwidthdownA5: {{pondesign.TotalBandwidthdownA5}} Mbps <br>
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                      
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                     
+                        Total Upstream Bandwidthup in area 1: {{pondesign.TotalBandwidthupA1}} Mbps <br>
+                        Total Upstream Bandwidthup in area 2: {{pondesign.TotalBandwidthupA2}}  Mbps <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Upstream Bandwidth in Designs for 3 to 5 Areas </mat-expansion-panel-header>
+                            TotalBandwidthupA3: {{pondesign.TotalBandwidthupA3}} <br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header> Upstream Bandwidth in Designs for 4 to 5 Areas </mat-expansion-panel-header>
+                           
+                                TotalBandwidthupA4: {{pondesign.TotalBandwidthupA4}} Mbps  <br>
+                                TotalBandwidthupA5: {{pondesign.TotalBandwidthupA5}} Mbps <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+
+                         
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                        TotalBandwidthDown: {{pondesign.TotalBandwidthDown}} Mbps<br>
+                        TotalBandwidthUp: {{pondesign.TotalBandwidthUp}} Mbps <br>
+
+                       
+                        Length of fibre from OLT to Splitter: {{pondesign.OSlength}} km <br>
+                        Length of fibre from Splitter to User 1: {{pondesign.SU1length}} km <br>
+                        Length of fibre from Splitter to User 2: {{pondesign.SU2length}} km <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Fibre Lengths in Designs for 3 to 5 Users </mat-expansion-panel-header>
+                            Length of fibre from Splitter to User 3: {{pondesign.SU3length}} km  <br>
+
+                            
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header> Fibre Lengths in Designs for 4 to 5 Users </mat-expansion-panel-header>
+                           
+                                Length of fibre from Splitter to User 4: {{pondesign.SU4length}} km  <br>
+                            Length of fibre from Splitter to User 5: {{pondesign.SU5length}} km  <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                           
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                       
+                        Total Length of fibre for user 1: {{pondesign.fibrelengthU1}} km <br>
+                        Total Length of fibre for user 2: {{pondesign.fibrelengthU2}} km  <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Fibre Lengths in for users for 3 to 5 Users </mat-expansion-panel-header>
+                            Total Length of fibre for user 3: {{pondesign.fibrelengthU3}} km <br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header> Fibre Lengths in Designs for 4 to 5 Users </mat-expansion-panel-header>
+                           
+                                Total Length of fibre for user 4: {{pondesign.fibrelengthU4}} km  <br>
+                                Total Length of fibre for user 5: {{pondesign.fibrelengthU5}} km  <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+
+                           
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                        
+
+                        
+                       
+                        Connector Loss for user 1: {{pondesign.ConLossU1}} db<br>
+                        Connector Loss for user 2: {{pondesign.ConLossU2}} db<br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Connector loss for 3 to 5 Users </mat-expansion-panel-header>
+                            Connector Loss for user 3: {{pondesign.ConLossU3}} db<br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header>Connector loss for Designs for 4 to 5 Users </mat-expansion-panel-header>
+                           
+                                Connector Loss for user 4: {{pondesign.ConLossU4}} db<br>
+                                Connector Loss for user 5: {{pondesign.ConLossU5}} db <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                          
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                        
+                        
+                        Attenuation Loss for User 1: {{pondesign.AttenuationLossU1}} db<br>
+                        Attenuation Loss for User 2: {{pondesign.AttenuationLossU2}} db<br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Attenuation loss for 3 to 5 Users </mat-expansion-panel-header>
+                            Attenuation Loss for User 3: {{pondesign.AttenuationLossU3}} db <br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header>Attenuation loss for Designs for 4 to 5 Users </mat-expansion-panel-header>
+                           
+                                Attenuation Loss for User 4: {{pondesign.AttenuationLossU4}} db<br>
+                                Attenuation Loss for User 5: {{pondesign.AttenuationLossU5}} db <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                         
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+
+                        Splice Loss for User 1: {{pondesign.splicelossU1}} db <br>
+                        Splice Loss for User 2: {{pondesign.splicelossU2}} db <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Splice loss for 3 to 5 Users </mat-expansion-panel-header>
+                            Splice Loss for User 3: {{pondesign.AttenuationLossU3}} db <br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header>Splice loss for Designs for 4 to 5 Users </mat-expansion-panel-header>
+                           
+                                Splice Loss for User 4: {{pondesign.AttenuationLossU4}} db <br>
+                                Splice Loss for User 5: {{pondesign.AttenuationLossU5}} db <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                           
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                       
+                      
+                       Splitter Loss for All users: {{pondesign.splitterLossU1}} <br>
+
+                        Insersion Loss for User 1: {{pondesign.insersionLossU1}} db <br>
+                        Insersion Loss for User 2: {{pondesign.insersionLossU2}}  db <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Inserion loss for 3 to 5 Users </mat-expansion-panel-header>
+                            Insersion Loss for User 3: {{pondesign.insersionLossU3}} db  <br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header>Insersion loss for Designs for 4 to 5 Users </mat-expansion-panel-header>
+                           
+                                Insersion Loss for User 4: {{pondesign.insersionLossU4}} db <br>
+                                Insersion Loss for User 5: {{pondesign.insersionLossU5}}  db <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                        
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                      
+                        Total Loss for User 1: {{pondesign.TotalLossU1}} db <br>
+                        Total Loss for User 2: {{pondesign.TotalLossU2}} db <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Total loss for 3 to 5 Users </mat-expansion-panel-header>
+                            Total Loss for User 3: {{pondesign.TotalLossU3}} db  <br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header>Total loss for Designs for 4 to 5 Users </mat-expansion-panel-header>
+                           
+                                Total Loss for User 4: {{pondesign.TotalLossU4}} db <br>
+                            Total Loss for User 5: {{pondesign.TotalLossU5}} db <br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                          
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+                        Dispersion from OLT to Splitter:  {{pondesign.OSdispersion}} ps/km <br>
+                        Dispersion for  User 1: {{pondesign.U1dispersion}} ps/km<br>
+                        Dispersion for  User 2: {{pondesign.U2dispersion}} ps/km <br>
+
+                        <mat-accordion multi="true">
+                            <mat-expansion-panel>
+                            <mat-expansion-panel-header> Dispersion for 3 to 5 Users </mat-expansion-panel-header>
+                            Dispersion for  User 3: {{pondesign.U1dispersion}} ps/km<br>
+
+                            <mat-accordion multi="true">
+                                <mat-expansion-panel>
+                                <mat-expansion-panel-header>Dispersion for Designs for 4 to 5 Users </mat-expansion-panel-header>
+                                Dispersion for  User 4: {{pondesign.U1dispersion}} ps/km <br>
+                                Dispersion for  User 5: {{pondesign.U1dispersion}} ps/km<br>
+                                </mat-expansion-panel>
+                            </mat-accordion>
+                          
+                            </mat-expansion-panel>
+                        </mat-accordion>
+
+
+                       
+                        
+
+
+
+
+                       
+
+                        
+
+                        
+
+                        
+                        
+                       
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  

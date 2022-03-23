@@ -1,0 +1,141 @@
+<div class="sect">
+    <h2>OLT Database</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter an OLT</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Olt Name</mat-label>
+                    <input
+                        matInput 
+                        #on
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Standard Spec of OLT</mat-label>
+                    <input
+                        matInput type="string"
+                        #ss
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Downstream Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #ds
+                      
+
+
+                    >
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Upstream Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #us
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Max Split Ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #sr
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Total Reach</mat-label>
+                    <input
+                        matInput type="string"
+                        #tr
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Power consumption</mat-label>
+                    <input
+                        matInput type="string"
+                        #pc
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Link</mat-label>
+                    <input
+                        matInput type="string"
+                        #link
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+                
+               
+                <button mat-raised-button (click)="onAdd(on.value, ss.value, ds.value, us.value, sr.value, tr.value, pc.value, link.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>OLT Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let olt of olts">
+                        <mat-expansion-panel-header>
+                            {{olt.Name}}
+                            
+                        
+                        </mat-expansion-panel-header>
+                        Name: {{olt.Name}} <br>
+                        StandardSpec: {{olt.StandardSpec}} <br>
+                        DownstreamRate: {{olt.DownstreamRate}} Mbps <br>
+                        UpstreamRate: {{olt.UpstreamRate}} Mbps <br>
+                        Splitratio: 1:{{olt.Splitratio}} <br>
+                        TotalReach: {{olt.TotalReach}} Km <br>
+                        PowerConsumption: {{olt.PowerConsumption}} W <br>
+                        Link:   {{olt.Link}}
+                       
+
+
+               
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  

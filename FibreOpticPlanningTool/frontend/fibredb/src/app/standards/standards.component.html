@@ -1,0 +1,130 @@
+<div class="sect">
+    <h2>Standards Database</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a Standard</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Standard Name</mat-label>
+                    <input
+                        matInput 
+                        #stdnameinput
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Down Stream Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #DSinput
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Up Stream Rate</mat-label>
+                    <input
+                        matInput type="string"
+                        #USinput
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Split Ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #SLinput
+                      
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Reach</mat-label>
+                    <input
+                        matInput type="string"
+                        #ReachInput
+                        
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Power Budget Maximum</mat-label>
+                    <input
+                        matInput type="string"
+                        #PBMaxInput
+                        
+
+
+                    required>
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Power Budget Minimum</mat-label>
+                    <input
+                        matInput type="string"
+                        #PBMinInput
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Link</mat-label>
+                    <input
+                        matInput type="string"
+                        #link
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+                <button mat-raised-button (click)="onAdd(stdnameinput.value, DSinput.value, USinput.value, SLinput.value,  ReachInput.value, PBMaxInput.value, PBMinInput.value, link.value )" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Standards Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let standard of standards">
+                        <mat-expansion-panel-header>
+                            {{standard.Name}} {{standard.Reach}}
+                        </mat-expansion-panel-header>
+                        Name: {{standard.Name}} <br>
+                        DownstreamRate: {{standard.DownstreamRate}} <br>
+                        UpstreamRate: {{standard.UpstreamRate}} <br>
+                        Splitlimit: {{standard.Splitlimit}} <br>
+                        Reach: {{standard.Reach}} <br>
+                        PowerBudgetMax: {{standard.PowerBudgetMax}} <br>
+                        PowerBudgetMin: {{standard.PowerBudgetMin}} <br>
+                        Link:  {{standard.Link}} <br>
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  

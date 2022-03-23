@@ -1,0 +1,293 @@
+<div class="sect">
+    <h2>Splitters Database</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a Splitter</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Splitter Name</mat-label>
+                    <input
+                        matInput 
+                        #sn
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Wavlenght </mat-label>
+                    <input
+                        matInput 
+                        #wl
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter insersion loss for 128 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #il128
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter insersion loss for 64 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #il64
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter insersion loss for 32 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #il32
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter insersion loss for 16 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #il16
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter insersion loss for 8 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #il8
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter insersion loss for 4 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #il4
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter insersion loss for 2 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #il2
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarziation loss for 128 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #pl128
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarziation loss for 64 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #pl64
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarziation loss for 32 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #pl32
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarziation loss for 16 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #pl16
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarziation loss for 8 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #pl8
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarziation loss for 4 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #pl4
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Polarziation loss for 2 ratio</mat-label>
+                    <input
+                        matInput type="string"
+                        #pl2
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                
+
+                <mat-form-field>
+                    <mat-label>Enter max power </mat-label>
+                    <input
+                        matInput type="string"
+                        #mp
+                      
+
+
+                    >
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter max split ratio </mat-label>
+                    <input
+                        matInput type="string"
+                        #msr
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Link </mat-label>
+                    <input
+                        matInput type="string"
+                        #link
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+              
+               
+               
+                <button mat-raised-button (click)="onAdd(sn.value, wl.value, il128.value, il64.value, il32.value, il16.value, il8.value, il4.value, il2.value,
+                pl128.value, pl64.value, pl32.value, pl16.value, pl8.value, pl4.value, pl2.value, mp.value, msr.value, link.value )" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Splitters Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let splitter of splitters">
+                        <mat-expansion-panel-header>
+                            {{splitter.Name}}
+                            
+                        
+                        </mat-expansion-panel-header>
+                        Name: {{splitter.Name}} <br>
+                        Wavelength: {{splitter.Wavelength}} nm <br>
+                        InsersionLoss128: {{splitter.InsersionLoss128}} db <br>
+                        InsersionLoss64: {{splitter.InsersionLoss64}} db <br>
+                        InsersionLoss32: {{splitter.InsersionLoss32}} db <br>
+                        InsersionLoss16: {{splitter.InsersionLoss16}} db <br>
+                        InsersionLoss8: {{splitter.InsersionLoss8}} db <br>
+                        InsersionLoss4: {{splitter.InsersionLoss4}} db <br>
+                        InsersionLoss2: {{splitter.InsersionLoss2}} db <br>
+                        Polarization128: {{splitter.Polarization128}} db <br>
+                        Polarization64: {{splitter.Polarization64}} db <br>
+                        Polarization32: {{splitter.Polarization32}} db <br>
+                        Polarization16: {{splitter.Polarization16}} db  <br>
+                        Polarization8: {{splitter.Polarization8}} db <br>
+                        Polarization4: {{splitter.Polarization4}} db  <br>
+                        Polarization2: {{splitter.Polarization2}} db <br>
+                        MaxPower: {{splitter.MaxPower}} w <br>
+                        SplitRatio: 1:{{splitter.SplitRatio}} <br>
+                        Link: {{splitter.Link}} <br>
+
+               
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  

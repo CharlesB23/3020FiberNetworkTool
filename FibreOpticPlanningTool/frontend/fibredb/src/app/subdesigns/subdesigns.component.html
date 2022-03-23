@@ -1,0 +1,284 @@
+<div class="sect">
+    <h2>Submarine Design tool</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a Deisgn</mat-card-header>
+        <mat-card-content>
+            <div>
+
+
+                <mat-form-field>
+                    <mat-label>Enter the Name of the Design </mat-label>
+                    <input
+                        matInput type="string"
+                        #nm
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Lat station 1 </mat-label>
+                    <input
+                        matInput type="string"
+                        #lts1
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Long station 1 </mat-label>
+                    <input
+                        matInput type="string"
+                        #lns1
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Lat station 2 </mat-label>
+                    <input
+                        matInput type="string"
+                        #lts2
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter Long station 2 </mat-label>
+                    <input
+                        matInput type="string"
+                        #lns2
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                
+                    <input
+                        matInput 
+                        #td
+                        type="string"
+                     
+
+
+                    >
+
+                    <input
+                    matInput 
+                    #cl
+                    type="string"
+                 
+
+
+                >
+
+
+            
+                <mat-form-field>
+                    <mat-label>enter connector loss of fib</mat-label>
+                    <input
+                        matInput type="string"
+                        #clf
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>enter number of connectors</mat-label>
+                    <input
+                        matInput type="string"
+                        #nc
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <input
+                matInput 
+                #al
+                type="string"
+             
+
+
+            >
+            <mat-form-field>
+                <mat-label>enter attentuation loss of fib</mat-label>
+                <input
+                    matInput type="string"
+                    #alf
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+            <input
+                matInput 
+                #sl
+                type="string"
+             
+
+
+            >
+
+            <mat-form-field>
+                <mat-label>enter splice loss of fibre</mat-label>
+                <input
+                    matInput type="string"
+                    #slf
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>enter number of splices</mat-label>
+                <input
+                    matInput type="string"
+                    #ns
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+            <input
+                matInput 
+                #rp
+                type="string"
+             
+            >
+
+
+                <mat-form-field>
+                    <mat-label>Enter transmitter power</mat-label>
+                    <input
+                        matInput type="string"
+                        #tp
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter reciever sens</mat-label>
+                    <input
+                        matInput type="string"
+                        #rs
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <input
+                matInput 
+                #ll
+                type="string"
+             
+
+
+            >
+
+                 <input
+                 matInput 
+                 #dp
+                 type="string"
+         
+
+                  >
+
+                  <mat-form-field>
+                    <mat-label>Enter disperiosn of fibre</mat-label>
+                    <input
+                        matInput type="string"
+                        #df
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <input
+                 matInput 
+                 #nr
+                 type="string"
+         
+
+                  >
+
+               
+               
+                <button mat-raised-button (click)="onAdd(nm.value, lts1.value, lns1.value, lts2.value, lns2.value, td.value, cl.value, 
+                clf.value, nc.value, al.value, alf.value, sl.value, slf.value, ns.value, rp.value, tp.value, rs.value, ll.value, dp.value,
+                df.value, nr.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Submarine Design Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let subdesign of subdesigns">
+                        <mat-expansion-panel-header>
+                            Deisgn: {{subdesign.Name}}
+                            
+                        
+                        </mat-expansion-panel-header>
+                        TotalDistance: {{subdesign.TotalDistance}} km<br>
+                        ConnectorLoss: {{subdesign.ConnectorLoss}} db<br>
+                        AttenuationLoss: {{subdesign.AttenuationLoss}} db<br>
+                        SpliceLoss: {{subdesign.SpliceLoss}} db<br>
+                        ReceivedPower: {{subdesign.ReceivedPower}} W<br>
+                        TransmitterPower: {{subdesign.TransmitterPower}} W<br>
+                        LossLimit: {{subdesign.LossLimit}} <br>
+                        dispersion: {{subdesign.dispersion}} ps/km<br>
+                        NumberofRepeaters: {{subdesign.NumberofRepeaters}} <br>
+                        
+
+
+                        
+                        
+                       
+                       
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  

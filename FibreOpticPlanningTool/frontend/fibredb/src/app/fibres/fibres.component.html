@@ -1,0 +1,99 @@
+<div class="sect">
+    <h2>Fibre Database</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a Fibre</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter Fibre Name</mat-label>
+                    <input
+                        matInput 
+                        #fbn
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Fibre Attenuation</mat-label>
+                    <input
+                        matInput type="string"
+                        #fa
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Fibre Connector Loss</mat-label>
+                    <input
+                        matInput type="string"
+                        #fcl
+                      
+
+
+                    >
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Fibre Dispersion</mat-label>
+                    <input
+                        matInput type="string"
+                        #fd
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Link</mat-label>
+                    <input
+                        matInput type="string"
+                        #link
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+               
+                <button mat-raised-button (click)="onAdd(fbn.value, fa.value, fcl.value, fd.value, link.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Fibres Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let fibre of fibres">
+                        <mat-expansion-panel-header>
+                            {{fibre.Name}}
+                            
+                        
+                        </mat-expansion-panel-header>
+                        Name: {{fibre.Name}} <br>
+                        FibreAttenuation: {{fibre.FibreAttenuation}} db/km <br>
+                        FibreConnectorLoss: {{fibre.FibreConnectorLoss}} db<br>
+                        FibreDispersion: {{fibre.FibreDispersion}} ps<br>
+                        Link:  {{fibre.Link}}
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  

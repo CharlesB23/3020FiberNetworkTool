@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+html, body {height: 100%}
+body{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(192, 198, 218);
+
+}
+
+.sect{
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(214, 202, 29, 0.288);
+     border: 1px groove dimgray;
+     border-radius: 8px;
+}
+
