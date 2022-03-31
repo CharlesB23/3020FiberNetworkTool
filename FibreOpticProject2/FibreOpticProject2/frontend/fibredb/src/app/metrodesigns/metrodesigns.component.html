@@ -1,0 +1,233 @@
+<div class="sect">
+    <h2>Metro Design tool</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter a Deisgn</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter the Name of the Design </mat-label>
+                    <input
+                        matInput type="string"
+                        #nm
+                       
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <input
+                matInput 
+                #td
+                type="string"
+             
+
+
+            >
+
+
+                <mat-form-field>
+                    <mat-label>Enter Lat station 1 </mat-label>
+                    <input
+                        matInput type="string"
+                        #lts1
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter long station 1 </mat-label>
+                    <input
+                        matInput type="string"
+                        #lns1
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter centre lat  </mat-label>
+                    <input
+                        matInput type="string"
+                        #clat
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Enter centre long </mat-label>
+                    <input
+                        matInput type="string"
+                        #clong
+                       
+
+
+                    required>
+
+                </mat-form-field>
+
+                <input
+                matInput 
+                #cl
+                type="string"
+             
+
+
+            >
+
+            <mat-form-field>
+                <mat-label>Enter number of connector  </mat-label>
+                <input
+                    matInput type="string"
+                    #numcons
+                   
+
+
+                required>
+
+            </mat-form-field>
+              
+            <mat-form-field>
+                <mat-label>Enter connector loss of fibre </mat-label>
+                <input
+                    matInput type="string"
+                    #clfib
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+            <input
+                matInput 
+                #al
+                type="string"
+             
+
+
+            >
+
+            <mat-form-field>
+                <mat-label>Enter attenuation loss of fibre </mat-label>
+                <input
+                    matInput type="string"
+                    #alfib
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+            <input
+            matInput 
+            #sl
+            type="string"
+         
+
+
+             >
+
+             <mat-form-field>
+                <mat-label>Enter splice loss of fibre </mat-label>
+                <input
+                    matInput type="string"
+                    #slfib
+                   
+
+
+                required>
+
+            </mat-form-field>
+
+            <input
+            matInput 
+            #rp
+            type="string"
+         
+
+
+             >
+             <mat-form-field>
+                <mat-label>Enter Transmitted Power </mat-label>
+                <input
+                    matInput type="string"
+                    #tp
+                   
+
+
+                required>
+
+            </mat-form-field>
+            <input
+            matInput 
+            #dp
+            type="string"
+         
+
+
+             >
+             <mat-form-field>
+                <mat-label>Enter disperion of fibre </mat-label>
+                <input
+                    matInput type="string"
+                    #dpfib
+                   
+
+
+                required>
+
+            </mat-form-field><br>
+
+               
+               
+                <button mat-raised-button (click)="onAdd(nm.value, td.value, lts1.value, lns1.value, clat.value, clong.value, cl.value,
+                numcons.value, clfib.value, al.value, alfib.value, sl.value, slfib.value, rp.value, tp.value, dp.value, dpfib.value)"color = "primary" >Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Submarine Design Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let mertodesign of metrodesigns">
+                        <mat-expansion-panel-header>
+                            Deisgn: {{mertodesign.Name}}
+                            
+                        
+                        </mat-expansion-panel-header>
+                        TotalDistance: {{mertodesign.TotalDistance}} km<br>
+                        ConnectorLoss: {{mertodesign.ConnectorLoss}} db<br>
+                        AttenuationLoss: {{mertodesign.AttenuationLoss}} db<br>
+                        SpliceLoss: {{mertodesign.SpliceLoss}} db<br>
+                        RecievedPower: {{mertodesign.RecievedPower}} W <br>
+                        Dispersion: {{mertodesign.Dispersion}} ps/km <br>
+            
+                    
+                       
+                       
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  

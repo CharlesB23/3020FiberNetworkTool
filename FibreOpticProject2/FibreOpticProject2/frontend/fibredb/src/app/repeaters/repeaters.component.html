@@ -1,0 +1,117 @@
+<div class="sect">
+    <h2>Repeaters Database</h2>
+    <p>Values available for use in Link Design</p>
+  </div>
+
+  <div class="sect">
+    <mat-card>
+        <mat-card-header>Enter an repeater</mat-card-header>
+        <mat-card-content>
+            <div>
+                <mat-form-field>
+                    <mat-label>Enter repeater Name</mat-label>
+                    <input
+                        matInput 
+                        #repname
+                        type="string"
+                     
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter Daterate</mat-label>
+                    <input
+                        matInput type="string"
+                        #dr
+                       
+
+
+                    required>
+
+                </mat-form-field>
+                <mat-form-field>
+                    <mat-label>Enter wavelength </mat-label>
+                    <input
+                        matInput type="string"
+                        #wav
+                      
+
+
+                    >
+
+                </mat-form-field><br>
+                <mat-form-field>
+                    <mat-label>Enter Power </mat-label>
+                    <input
+                        matInput type="string"
+                        #pow
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+              
+               
+                <mat-form-field>
+                    <mat-label>Enter Range</mat-label>
+                    <input
+                        matInput type="string"
+                        #ran
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                <mat-form-field>
+                    <mat-label>Enter Link </mat-label>
+                    <input
+                        matInput type="string"
+                        #link
+                      
+
+
+                    required>
+
+                </mat-form-field><br>
+
+                
+               
+                <button mat-raised-button (click)="onAdd(repname.value, dr.value, wav.value, pow.value, ran.value, link.value)" color="primary">Add</button>
+            </div>
+
+        </mat-card-content>
+        <mat-card>
+            <mat-card-header>Repeters Database</mat-card-header>
+            <mat-card-content>
+                <mat-accordion multi="true">
+                    <mat-expansion-panel *ngFor="let repeater of repeaters">
+                        <mat-expansion-panel-header>
+                            {{repeater.Name}}
+                            
+                        
+                        </mat-expansion-panel-header>
+                        Name: {{repeater.Name}} <br>
+                        DataRate: {{repeater.DataRate}} <br>
+                        Wavelength: {{repeater.Wavelength}} <br>
+                        Range:  {{repeater.Range}} <br>
+                        Link:  {{repeater.Link}} <br>
+
+               
+                        
+                    </mat-expansion-panel>
+
+                </mat-accordion>
+            </mat-card-content>
+
+        </mat-card>
+        
+    </mat-card>
+  </div>
+  
+  
